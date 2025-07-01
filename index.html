@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AnimeCrate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
+    />
+
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -17,7 +22,7 @@
     />
   </head>
   <body>
-    <div id="cursor"></div>
+    <!-- <div id="cursor"></div> -->
     <div id="loader">
       <div class="line line1">
         <div class="increas-num">
@@ -36,7 +41,7 @@
     </div>
 
     <div id="main">
-      <div class="page1">
+      <div class="page1" data-scroll>
         <div id="nav">
           <img src="/assets/images/AnimeCrate.png" alt="Logo" id="logo" />
           <div class="nav-part2">
@@ -60,25 +65,62 @@
         </div>
       </div>
 
-      <div class="page2">
+      <div class="page2" data-scroll>
         <div id="video-container">
           <div id="videoPlayer"><i class="ri-play-fill"></i></div>
-          <img src="assets/images/Anime Poster.jpg" alt="Poster" />
-          <video
-            src="/assets/videos/Anime Edit.mp4"
-            loop
-            muted
-            autoplay
-          ></video>
+          <img src="assets/images/Anime Poster.jpg" alt="" />
+          <video src="/assets/videos/Anime Edit.mp4" loop muted></video>
         </div>
       </div>
 
-      <div class="page3"></div>
+      <div class="page3" data-scroll>
+        <div id="page3Content">
+          <h1>Our Representation</h1>
+          <div id="underline"></div>
+        </div>
+        <div id="image-container">
+          <div class="images">
+            <img src="/assets/images/sukuna.jpg" />
+            <img src="/assets/images/sukuna1.jpg" />
+          </div>
+          <div class="images">
+            <img src="assets/images/goku2.jpg" />
+            <img src="assets/images/Goku.jpg" />
+          </div>
 
-      <div class="page4">
+          <div class="page3Circle1">
+            <div class="innerCircle"></div>
+            <svg viewBox="0 0 91 118" fill="none">
+              <path
+                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div class="page3Circle2">
+            <svg viewBox="0 0 91 118" fill="none">
+              <path
+                d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="images">
+            <img src="assets/images/image2.jpg" />
+            <img src="assets/images/image.jpg" />
+          </div>
+          <div class="images">
+            <img src="assets/images/Atack on titan 2.jpg" alt="" />
+            <img src="assets/images/Attack-on-titan.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="page4" data-scroll>
         <div id="page4Content">
           <h1>About AnimeCrate</h1>
-          <div class="underline"></div>
+          <div id="underline"></div>
           <p>
             AnimeCrate is more than just a website — it’s a creative space
             crafted for anime lovers. We blend the beauty of anime visuals with
@@ -106,9 +148,9 @@
         </div>
       </div>
 
-      <div class="page5">
+      <div class="page5" data-scroll>
         <div class="underText">
-          <div id="newUnderline"></div>
+          <div id="underline"></div>
           <span>Popular Anime Series</span>
         </div>
 
@@ -143,7 +185,7 @@
 
       <footer>
         <h1>LET'S CONNECT <i class="ri-emotion-2-line"></i></h1>
-        <div class="underline"></div>
+        <div id="underline"></div>
         <div class="socialHandle">
           <div class="socials">
             <h5 class="title">Social</h5>
@@ -158,13 +200,17 @@
           </div>
           <div class="msg">
             <h5 class="title">Say Hi!</h5>
-            <a href="mailto:animecrate.web@gmail.com">animecrate.web@gmail.com</a>
+            <a href="mailto:animecrate.web@gmail.com"
+              >animecrate.web@gmail.com</a
+            >
           </div>
         </div>
-        <div class="lower-underline"></div>
+        <div id="underline"></div>
         <span class="copyright">AnimeCrate &copy; 2025</span>
       </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -179,6 +225,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
     <script
       type="text/javascript"

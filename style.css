@@ -21,7 +21,7 @@ body::selection {
   background-color: #ff551c;
 }
 
-#cursor {
+/* #cursor {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
@@ -30,13 +30,17 @@ body::selection {
   border: 1px solid #ffffff85;
   transform: translate(-50%, -50%);
   mix-blend-mode: difference;
-}
+} */
 
 html,
 body {
   height: 100%;
   width: 100%;
   background-color: var(--main-bg-color);
+}
+
+#main {
+  position: relative;
 }
 
 #loader {
@@ -55,22 +59,6 @@ body {
   line-height: 6rem;
 }
 
-.line {
-  height: fit-content;
-  overflow: hidden;
-}
-
-#main {
-  position: relative;
-}
-
-.page1 {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--main-bg-color);
-  position: relative;
-}
-
 .increas-num {
   width: 13rem;
   height: 4.5rem;
@@ -84,6 +72,11 @@ body {
   font-family: "Cursive";
   font-size: 2.5rem;
   font-weight: 100;
+}
+
+.line {
+  height: fit-content;
+  overflow: hidden;
 }
 
 .line1 {
@@ -116,6 +109,13 @@ body {
     font-family: "silk serif";
     color: transparent;
   }
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  position: relative;
 }
 
 .page1 #logo {
@@ -161,7 +161,7 @@ body {
   transition: -webkit-text-stroke ease 0.3s;
 }
 
-#hero1::before{
+#hero1::before {
   content: "01";
   position: absolute;
   left: 18%;
@@ -188,16 +188,16 @@ body {
   left: 29%;
 }
 
-#video-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #video-container img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   position: absolute;
+}
+
+#video-container video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -222,8 +222,112 @@ body {
 .page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: black;
   position: relative;
+  padding: 0 4rem;
+  margin-bottom: 5rem;
+}
+
+#page3Content {
+  width: 75%;
+  position: relative;
+  left: 20%;
+}
+
+#page3Content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  position: relative;
+}
+
+#page3Content h1::before {
+  content: "02";
+  position: absolute;
+  left: -15%;
+  top: 12%;
+  font-size: 3rem;
+  font-family: "Silk serif";
+}
+
+#image-container {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#image-container .images {
+  height: 25rem;
+  width: 20rem;
+  flex-shrink: 0;
+}
+
+#image-container .images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#image-container .images:nth-child(2) {
+  height: 30rem;
+  width: 20rem;
+}
+
+.page3Circle1 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 2px solid var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-left: 5rem;
+  position: relative;
+}
+
+.page3Circle1 .innerCircle {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary);
+  color: #000;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 9;
+  scale: 0;
+  transition: all ease 0.5s;
+}
+
+.page3Circle1:hover .innerCircle {
+  scale: 1;
+}
+
+.page3Circle1 svg {
+  height: 5rem;
+}
+
+.page3Circle2 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border: 2px solid var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.page3Circle2 svg {
+  height: 5rem;
+  transform: rotate(-45deg);
 }
 
 .page4 {
@@ -240,9 +344,10 @@ body {
   left: 20%;
 }
 
-#page4Content .underline {
-  border-bottom: 2px solid var(--light-color);
-  margin-bottom: 2rem;
+#underline {
+  height: 0.1rem;
+  background: var(--light-color);
+  margin-bottom: 1.8rem;
 }
 
 #page4Content h1 {
@@ -302,13 +407,6 @@ body {
   border-radius: 0.5rem;
   transform: rotate(3deg);
   z-index: 999;
-}
-
-#newUnderline {
-  height: 0.1rem;
-
-  background: var(--light-color);
-  margin-bottom: 1rem;
 }
 
 .underText {
@@ -379,10 +477,11 @@ body {
 
 footer {
   min-height: 100vh;
-  width: 80%;
+  width: 70%;
   padding-top: 5rem;
   position: relative;
   left: 20%;
+  padding-right: 2rem;
 }
 
 footer h1 {
@@ -402,7 +501,8 @@ footer h1::before {
 .socialHandle {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 5rem;
 }
 
 .socials {
@@ -414,7 +514,7 @@ footer h1::before {
 .socials a {
   text-decoration: none;
   margin-bottom: 0.2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .title {
@@ -428,26 +528,16 @@ footer h1::before {
 }
 
 .address span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 
 .msg a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
-footer .underline {
-  height: 1px;
-  background: var(--light-color);
-  width: 90%;
-  margin-bottom: 3rem;
-}
-
-footer .lower-underline {
-  height: 1px;
-  background: var(--light-color);
-  width: 90%;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+._canvas_container {
+  z-index: 99999 !important;
+  pointer-events: none;
 }
