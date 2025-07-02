@@ -63,9 +63,8 @@ body {
   width: 13rem;
   height: 4.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
 }
 
 .increas-num h5 {

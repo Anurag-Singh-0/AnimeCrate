@@ -1,0 +1,273 @@
+/*-----------------------------------*\
+  #Responsiveness code
+\*-----------------------------------*/
+
+/* Extra Small (XS) - Phones (up to 575.98px) */
+@media (max-width: 575.98px) {
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  #loader .line h1 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #loader .line1 {
+    height: 5vh;
+  }
+
+  #loader .line {
+    width: 100%;
+  }
+
+  .line3 h2 {
+    font-size: 1.2rem;
+  }
+
+  .increas-num {
+    display: flex;
+    width: auto;
+    gap: 0;
+  }
+
+  .increas-num h5 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .page1 #logo {
+    width: 25vw;
+  }
+
+  .page1 #nav {
+    padding: 0.5rem 1rem;
+  }
+
+  #nav .nav-part2 {
+    gap: 1rem;
+  }
+
+  #nav .nav-part2 a {
+    font-size: 1rem;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .heroText {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  #hero1::before {
+    left: 6%;
+    top: 15%;
+    font-size: 2rem;
+  }
+
+  #video-container {
+    height: auto;
+    width: 100%;
+    left: 0%;
+    top: 12%;
+  }
+
+  .page2 {
+    position: absolute;
+    top: 6%;
+  }
+
+  #videoPlayer {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+
+  #videoPlayer i {
+    font-size: 1.5rem;
+  }
+
+  .page3 {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  #page3Content {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 0 2rem;
+  }
+
+  #page3Content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #page3Content h1::before {
+    left: 1%;
+    top: -110%;
+    font-size: 1.5rem;
+  }
+
+  #image-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .page3Circle1 {
+    display: none;
+  }
+
+  .page3Circle2 {
+    display: none;
+  }
+
+  .page4 {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #page4Content {
+    width: 100%;
+    left: 0;
+  }
+
+  #page4Content h1 {
+    font-size: 1.6rem;
+  }
+
+  #page4Content h1::before {
+    left: 1%;
+    top: -15%;
+    font-size: 2rem;
+  }
+
+  #page4Content p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .page4 .wrapper {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .page4 .wrapper img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .page4-poster2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #content {
+    gap: 2rem;
+    width: 100%;
+    margin-top: 100%;
+  }
+
+  .page4-poster2 {
+    height: 50vh;
+    width: 80vw;
+    left: 5%;
+    rotate: -10deg;
+    top: 55%;
+  }
+
+  .underText {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+
+  .move h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    min-width: 100%;
+  }
+
+  footer {
+    min-height: 100vh;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  footer h1::before {
+    left: 0%;
+    top: -82%;
+    font-size: 1.8rem;
+  }
+
+  .socials {
+    margin-right: 0;
+  }
+
+  .socialHandle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    margin: 0;
+    color: #ff551c;
+  }
+
+  .address{
+    width: 100%;
+  }
+
+  .address h5 {
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  .msg h5 {
+    margin: 1.5rem 0 0.5rem 0;
+  }
+}
+
+/* Small (SM) - Large phones and small tablets (576px - 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .page1 {
+    background-color: rebeccapurple;
+  }
+}
+
+/* Medium (MD) - Tablets (768px - 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .page1 {
+    background-color: yellow;
+  }
+}
